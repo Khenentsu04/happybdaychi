@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    background-color: #ffebf0;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+h1 {
+    color: #ff1493;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.gift-box {
+    width: 200px;
+    height: 200px;
+    background: url('https://cdn.pixabay.com/photo/2014/12/21/23/36/gift-575422_960_720.png') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    margin: 20px auto;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.hidden {
+    display: none;
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
