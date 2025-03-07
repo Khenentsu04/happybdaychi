@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Chi!</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffebf0;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            overflow: hidden;
+        }
+        h1 {
+            color: #ff1493;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            color: #333;
+            font-size: 18px;
+        }
+        .gift-box {
+            width: 200px;
+            height: 200px;
+            background: url('https://cdn.pixabay.com/photo/2014/12/21/23/36/gift-575422_960_720.png') no-repeat center;
+            background-size: contain;
+            cursor: pointer;
+            margin: auto;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        #message {
+            display: none;
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #music {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click the Present, My Love 🎁</h1>
+    <div class="gift-box" onclick="openGift()"></div>
+
+    <div id="message">
+        <h1>happy birthday, my love, my chi!</h1>
+        <p>i don’t even know where to start because there are so many things i want to say, but let me begin with this i am so incredibly grateful for you. from the moment i first messaged you, i had no idea that you would become the most important person in my life. i started by teasing and annoying you, but little did i know, you would become my greatest comfort, my safe place, and my heart’s home.</p>
+        
+        <p>you’ve been there through my ups and downs, through my good days and my worst ones. you never left, never gave up on me, and never made me feel alone. you reminded me that love is real, that it’s not just something that hurts it’s something that heals. and that’s exactly what you did for me. you healed parts of me that i thought would always be broken.</p>
+
+        <p>i used to be scared to love again, afraid of opening my heart because of the pain i had experienced before. but then you came along, and suddenly, love didn’t feel scary anymore it felt warm, safe, and natural. you made me believe in love again, not just with your words, but with the way you care for me, understand me, and stay by my side no matter what.</p>
+
+        <p>even though we’re miles apart, i feel your love in everything. in your messages, in the way you laugh at my jokes even when you pretend to be annoyed, and in the way you never let the distance change what we have. i wish more than anything that i could be there with you today, holding you close, making sure you feel just how much you mean to me. but until that day comes, i want you to know this my heart is always with you. you are my person, my love, my everything.</p>
+
+        <p>so today, on your special day, i hope you feel nothing but happiness, love, and all the beautiful things you deserve. i hope you smile a lot, laugh until your cheeks hurt, and feel how much you are loved not just by me, but by everyone who is lucky enough to know you.</p>
+
+        <p>happy birthday, my love, my chi! i love you endlessly, and i can’t wait for the day i can finally celebrate with you in person. until then, i’ll keep annoying you from afar because let’s be real, it’s my way of showing love.</p>
+
+        <p>enjoy your day, my queen!</p>
+    </div>
+
+    <audio id="music" autoplay loop>
+        <source src="https://www.your-music-link.com/palagi.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function openGift() {
+            document.querySelector('.gift-box').style.display = 'none';
+            document.getElementById('message').style.display = 'block';
+            document.getElementById('music').play();
+        }
+    </script>
+
+</body>
+</html>
